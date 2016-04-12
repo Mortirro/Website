@@ -2,5 +2,5 @@
  min-height: 400px;
  background: url("images/header.png") center no-repeat;
  background-size: cover;
- position: relative;
+ /*position: relative;*/
 }
