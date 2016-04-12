@@ -1,6 +1,14 @@
+.page{
+ height: 756px;
+}
 .header{
  min-height: 400px;
- background: url("images/header.png") center no-repeat;
- background-size: cover;
- /*position: relative;*/
+ background: url("images/header.svg") center no-repeat;
+ background-size: cover;}
+
+ .logo{
+ height: 250px;
+ display: block;
+ background: url("images/logo.svg")center no-repeat;
+ background-size: contain;
 }
