@@ -1,5 +1,7 @@
 .page{
  height: 756px;
+ margin: -7px;
+ border: 1px solid;
 }
 .header{
  min-height: 400px;
@@ -11,4 +13,14 @@
  display: block;
  background: url("images/logo.svg")center no-repeat;
  background-size: contain;
+}
+.title{
+ width: 100%;
+ position: absolute;
+ top: 200px;
+ display: block;
+ text-align: center;
+ font-family: arial;
+ font-size: 48px;
+ color: rgba(251, 255, 255, 1);
 }
