@@ -11,12 +11,14 @@ body {
  margin-bottom: 50px;
  background: url("images/header.svg") center top no-repeat;
  background-size: cover;
+ border: 1px solid;
 }
  .logo{
  height: 250px;
  display: block;
  background: url("images/logo.svg")center no-repeat;
  background-size: contain;
+  border: 1px solid;
 }
 .title{
  width: 100%;
