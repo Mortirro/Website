@@ -8,11 +8,17 @@ body {
 }
 .promo{
  min-height: 400px;
- background: url("images/promo.svg") center top no-repeat;
+ background: url("images/promo.png") center top no-repeat;
  background-size: cover;
  margin-bottom: 50px;promo
  border: 1px solid;
 }
+.title{
+  font-family: arial;
+  text-align: center;
+  font-size: 48px;
+}
+
  .logo{
  height: 250px;
  display: block;
@@ -22,13 +28,19 @@ body {
   border: 1px solid;
 }
 .gallery{
-display: inline-block;
+
+position: relative;
 }
 
 .gallery-title{
-
-  font-family: arial;
-  font-size: 50px;
-  text-align:center;
-
+margin: 0 auto;
+font-family: arial;
+font-size: 50px;
+text-align:center;
+}
+.gallery-list {
+  text-align: center;
+}
+.gallery-list-item{
+display: inline-block;
 }
