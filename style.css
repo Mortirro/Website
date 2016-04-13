@@ -8,9 +8,9 @@ body {
 }
 .promo{
  min-height: 400px;
- margin-bottom: 50px;
- background: url("images/header.svg") center top no-repeat;
+ background: url("images/promo.svg") center top no-repeat;
  background-size: cover;
+ margin-bottom: 50px;promo
  border: 1px solid;
 }
  .logo{
@@ -18,15 +18,17 @@ body {
  display: block;
  background: url("images/logo.svg")center no-repeat;
  background-size: contain;
+ margin-bottom: 50px;
   border: 1px solid;
 }
-.title{
- width: 100%;
- position: absolute;
- top: 200px;
- display: block;
- text-align: center;
- font-family: arial;
- font-size: 48px;
- color: rgba(251, 255, 255, 1);
+.gallery{
+display: inline-block;
+}
+
+.gallery-title{
+
+  font-family: arial;
+  font-size: 50px;
+  text-align:center;
+
 }
