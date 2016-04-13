@@ -1,12 +1,18 @@
-.page{
- height: 756px;
- margin: -7px;
- border: 1px solid;
+body {
+  padding: 0;
+  margin: 0;
 }
-.header{
+
+.page{
+ max-width: 1400px;
+ margin: 0 auto;
+}
+.promo{
  min-height: 400px;
- background: url("images/header.svg") center no-repeat;
- background-size: cover;}
+ margin-bottom: 50px;
+ background: url("images/header.svg") center top no-repeat;
+ background-size: cover;
+}
 
  .logo{
  height: 250px;
