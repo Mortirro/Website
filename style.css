@@ -92,13 +92,40 @@ body {
   font-family: arial;
   font-size: 48px;
   text-align: center;
-  margin-bottom: 20px;
+  border-top: 2px solid;
+  /*margin-bottom: 200px;*/
 }
 .image-services{
 display: inline-block;
 position: relative;
 }
 .images-boxes{
-  margin: 0 auto;
-  max-width: 700px;
+  width: 900px;
+  /*padding: 10px*/
+  /*align: center;*/
+  margin: auto;
+  background-color:rgb(62, 44, 106);
+  position: relative;
+  margin-bottom: 50px;
+}
+.image-services{
+  /*float:right;*/
+  margin: 15px 50px;
+  border: 1px solid;
+}
+/*.price{
+  float:inherit;
+  font-family: arial;
+  font-size: 25px;
+  text-align: center;
+}*/
+.about{
+
+}
+.about-me{
+  font-family: arial;
+  font-size: 48px;
+  color:#fff;
+  text-align: center;
+  background-color:#ee964c;
 }
