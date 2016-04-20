@@ -172,13 +172,39 @@ position: relative;
 }
 .images-boxes{
   width: 900px;
-  /*padding: 10px*/
-  /*align: center;*/
+  height: 420px;
   margin: auto;
   /*background-color:rgb(62, 44, 106);*/
   position: relative;
   margin-bottom: 50px;
 }
+
+.left-border,
+.right-border{
+  width: 220px;
+  height: 100%;
+  border: 2px solid;
+  position: absolute;
+}
+
+.left-border{
+  border-right: none;
+  left: 0;
+}
+
+.right-border{
+border-left: none;
+right: 0;
+}
+
+.bottom-border{
+  width: 300px;
+  border-bottom: 2px solid;
+  position: absolute;
+  bottom: -4px;
+  left: 300px;
+}
+
 .image-services{
   /*float:right;*/
   margin: 15px 50px;
