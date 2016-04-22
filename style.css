@@ -299,35 +299,87 @@ margin: 35px 0;
   font-size: 75%;
 }
 
-.about-list-item{
+.advantages {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+.advantages__circle {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+	width: 130px;
+	height: 130px;
+  background-color: #f15a25;
+	border-radius: 50%;
+}
+
+.advantages__circle--color-1 {
+	background-color: #f15a25;
+}
+.advantages__circle--color-2 {
+	background-color: #f15a23;
+}
+.advantages__circle--color-3 {
+	background-color: #ee1b24;
+
+}
+
+.advantages__text {
+/*font-size: ;
+line-height: ;
+font-family: ;*/
+	color: #ffffff;
+}
+
+/*.advantages__text-big {
+	font-size: ;
+}*/
+
+
+
+
+
+
+
+
+
+/*.about-list-item {
 display: inline-block;
 text-align: center;
-vertical-align: middle;
+vertical-align:bottom;
 width: 115px;
 height:115px;
 border-radius: 100%;
 margin: 10px;
-/*position: absolute;*/
-/*left: 0;*/
-}
+}*/
 
-.about-list-item_1{
+/*.about-list-item_1{
   background-color: #f15a25;
-vertical-align:baseline;
-  /*margin: 0;*/
-}
-.about-list-item_2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+}*/
+/*.about-list-item_2{
   background-color: #7e3820;
-}
-.about-list-item_3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+}*/
+/*.about-list-item_3{
   background-color: #b66548;
-  margin: auto;
-}
+  }*/
 
-.about-list-item p{
+/*.about-list-item p{
   padding: 20px;
   text-align: left;
-}
+}*/
 
 .about-image {
   overflow: hidden;
