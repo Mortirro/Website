@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <title>Мой сайт</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    	$(".fancybox").fancybox({
+    		openEffect	: 'none',
+    		closeEffect	: 'none'
+    	});
+    });
+    </script>
   </head>
 <body>
   <div class="page">
@@ -76,77 +87,83 @@
     <div class="services-title">
       <span class="services-border">Услуги<span>
     </div>
-    <div class="images-boxes">
-      <div class="left-border"></div>
-      <div class="right-border"></div>
-      <div class="bottom-border"></div>
-      <div class="image-services">
-        <div class="image-box">
-          <img src="images/servises background 1.jpg">
-      </div>
-          <div class="service-name-price">
-            <div class="name">Пробная прическа</div>
-            <div class="price">250-350 грн.</div>
-          </div>
-      </div>
 
-      <div class="image-services">
-        <div class="image-box">
-          <img src="images/servises background 2.jpg">
-      </div>
-          <div class="service-name-price">
-            <div class="name">Пробный макияж</div>
-            <div class="price">150 грн.</div>
-          </div>
-      </div>
+      <div class="images-boxes">
+        <div class="images-boxes__border-bottom">
+        <!-- <div class="left-border"></div> -->
+        <!-- <div class="right-border"></div> -->
+        <!-- <div class="bottom-border"></div> -->
+        <div class="image-services">
+          <div class="image-box">
+            <img src="images/servises background 1.jpg">
+        </div>
+            <div class="service-name-price">
+              <div class="name">Пробная прическа</div>
+              <div class="price">250-350 грн.</div>
+            </div>
+        </div>
 
-      <div class="image-services">
-        <div class="image-box">
-          <img src="images/servises background 1.jpg">
-      </div>
-          <div class="service-name-price">
-            <div class="name">укладка</div>
-            <div class="price">150 грн.</div>
-          </div>
-      </div>
+        <div class="image-services">
+          <div class="image-box">
+            <img src="images/servises background 2.jpg">
+        </div>
+            <div class="service-name-price">
+              <div class="name">Пробный макияж</div>
+              <div class="price">150 грн.</div>
+            </div>
+        </div>
 
-      <div class="image-services">
-        <div class="image-box">
-          <img src="images/servises background 2.jpg">
-      </div>
-          <div class="service-name-price">
-            <div class="name">Прическа</div>
-            <div class="price">350-700 грн.</div>
-          </div>
-      </div>
+        <div class="image-services">
+          <div class="image-box">
+            <img src="images/servises background 1.jpg">
+        </div>
+            <div class="service-name-price">
+              <div class="name">укладка</div>
+              <div class="price">150 грн.</div>
+            </div>
+        </div>
 
-      <div class="image-services">
-        <div class="image-box">
-          <img src="images/servises background 1.jpg">
-      </div>
-          <div class="service-name-price">
-            <div class="name">Макияж</div>
-            <div class="price">350 грн.</div>
-          </div>
-      </div>
+        <div class="image-services">
+          <div class="image-box">
+            <img src="images/servises background 2.jpg">
+        </div>
+            <div class="service-name-price">
+              <div class="name">Прическа</div>
+              <div class="price">350-700 грн.</div>
+            </div>
+        </div>
 
-      <div class="image-services">
-        <div class="image-box">
-          <img src="images/servises background 2.jpg">
-      </div>
-          <div class="service-name-price">
-            <div class="name">Выезд <br>на дом</div>
-            <div class="price">150 грн.</div>
-          </div>
-      </div>
+        <div class="image-services">
+          <div class="image-box">
+            <img src="images/servises background 1.jpg">
+        </div>
+            <div class="service-name-price">
+              <div class="name">Макияж</div>
+              <div class="price">350 грн.</div>
+            </div>
+        </div>
 
-  </div>
+        <div class="image-services">
+          <div class="image-box">
+            <img src="images/servises background 2.jpg">
+        </div>
+            <div class="service-name-price">
+              <div class="name">Выезд <br>на дом</div>
+              <div class="price">150 грн.</div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
 </div>
 </div>
 
 
 <div class="about">
-<span class="about-me">Обо мне</span>
+<div class="about-me">
+  <div class="about-me__text">Обо мне</div>
+</div>
 <div class="about-body">
 
   <a class="anchor" name="about"></a>
@@ -167,16 +184,6 @@
       </div>
 
 
-      <!-- <div class="about-description">
-        <div class="about-list">
-            <div class="about-list-item"><p class="about-list-item_1">Призовые
-               места в крнкурсах</p></div>
-            <div class="about-list-item about-list-item_2">15
-              <br> лет стажа</div>
-            <div class="about-list-item about-list-item_3">
-              <p>Свадебные и вечерние прически</p>
-            </div>
-          </div> -->
 
 
           <ul class="advantages">
@@ -200,12 +207,7 @@
 
 
 
-
-
-
-
-
-          <p>Меня зовут Аня, я специалист в сфере парикмахерских услуг с опытом работы более 15 лет. Основное направление моей деятельности это свадебные и вечерние прически. Подтверждением моего высокого профессионального уровня являются призовые места в конкурсах и довольные клиенты.
+          <p class="about__text">Меня зовут Аня, я специалист в сфере парикмахерских услуг с опытом работы более 15 лет. Основное направление моей деятельности это свадебные и вечерние прически. Подтверждением моего высокого профессионального уровня являются призовые места в конкурсах и довольные клиенты.
             <br>Я выполняю как существующие так и индивидуальные креативные работы.</p>
           <div class="about-description contacts">
             <div class="about-description__contacts__phone">Телефон:
@@ -216,10 +218,19 @@
           </div>
     </div>
     </div>
+
+
+
+
+
 <div class="diploms">
-  <div class="fancybox-2.0">
-  </div>
-</div>
+      <a class="fancybox" rel="group" href="images/pricheski-na-srednie-volosy-foto.jpg"><img src="images/diplom_1_small.jpg" alt="" /></a>
+    <a class="fancybox" rel="group" href="images/reWalls.com-36077.jpg"><img src="images/diplom_2_small.jpg" alt="" /></a>
+    <a class="fancybox" rel="group" href="images/pricheski-na-srednie-volosy-foto.jpg"><img src="images/diplom_3_small.jpg" alt="" /></a>
+    <a class="fancybox" rel="group" href="images/pricheski-na-srednie-volosy-foto.jpg"><img src="images/diplom_4_small.jpg" alt="" /></a>
+    <a class="fancybox" rel="group" href="images/pricheski-na-srednie-volosy-foto.jpg"><img src="images/pletenya2.jpg" alt="" /></a>
+    <a class="fancybox" rel="group" href="images/pricheski-na-srednie-volosy-foto.jpg"><img  src="images/diplom_6_small.jpg" alt="" /></a>
+    </div>
 </div>
 </div>
 
@@ -231,19 +242,20 @@
 
 <div class="footer">
   <div class="footer-feedback">
-
+      Анна
+      <a href="tel:+380662032523">+38 (066) 203-25-23</a>
   </div>
   <div class="footer-copyright">
-
+    Все права защищены.&copy;
+    <br>2015-2016г.
   </div>
   <div class="footer-dev">
-
+    <span class="footer-box-name">Разработка</span>
+    <a class="footer-box-logo" href="https://www.facebook.com/dennis.putiy">
+      <img src="images/develop_logo.jpg" alt="develop_logo" />
+    </a>
   </div>
 </div>
-
-
-
-
 
 
 </div>

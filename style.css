@@ -50,18 +50,18 @@ color: #ee964c;
 border-left: 1px solid #ffffff;
 }
 
-.header-feedback{
+.header-feedback {
   float:right;
   position: relative;
   top:-20px;
   right: 50px;
   display: inline-block;
 }
-.header-feedback a{
+.header-feedback a, .footer-feedback a{
   text-decoration: none;
   color: #fff;
 }
-.header-feedback::before{
+.header-feedback::before, .footer-feedback::before{
   display: inline-block;
   position: relative;
   top:10px;
@@ -117,6 +117,7 @@ border-left: 1px solid #ffffff;
 .image-services{/*Искать размеры услуг здесь!!!!!!!!!!!!!!*/
   width: 180px;
   height: 180px;
+  margin: 25px 50px;
 }
 .gallery-list-item .image-box,
 .image-services .image-box{
@@ -168,13 +169,54 @@ position: relative;
 }
 .images-boxes{
   width: 900px;
-  height: 420px;
+  height: 470px;
   margin: auto;
   position: relative;
   margin-bottom: 50px;
 }
 
-.left-border,
+.images-boxes::before, .images-boxes::after{
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 220px;
+  height: 100%;
+  border: 2px solid;
+}
+
+.images-boxes::before{
+  border-right: none;
+  left: 0;
+  top: 0;
+}
+
+.images-boxes::after{
+  border-left: none;
+  right: 0;
+  top: 0;
+}
+
+.images-boxes__border-bottom::before, .images-boxes__border-bottom::after{
+  display: inline-block;
+  content: "";
+  border-bottom: 2px solid;
+  position: absolute;
+}
+
+.images-boxes__border-bottom::before{
+  width: 300px;
+  bottom: 8px;
+  left: 300px;
+}
+
+.images-boxes__border-bottom::after{
+  width: 400px;
+  left: 250px;
+  bottom: -4px;
+}
+
+
+/*.left-border,
 .right-border{
   width: 220px;
   height: 100%;
@@ -196,11 +238,11 @@ position: relative;
   position: absolute;
   bottom: -4px;
   left: 300px;
-}
+}*/
 
-.image-services{
-  margin: 15px 50px;
-}
+
+
+
 .service-name-price{
   float:inherit;
   font-family: arial;
@@ -218,7 +260,6 @@ position: relative;
 
 .about-me{
   width: 100%;
-  height: 50px;
   position: absolute;
   left: 0;
   text-align: center;
@@ -226,6 +267,13 @@ position: relative;
   color: #fff;
   background-color:#f15a25;
 }
+
+.about-me__text{
+padding: 10px 0;
+/*margin: 30px auto;*/
+}
+
+
 .about-body{
 width: 900px;
 overflow: hidden;
@@ -331,8 +379,70 @@ margin: 35px 0;
 }
 
 
+.diploms{
+  text-align: center;
+}
+
+
+
+.diploms .fancybox{
+display: inline-block;
+height: 201px;
+width: 142px;
+overflow: hidden;
+}
+
+.diploms img{
+width: 100%;
+
+}
+
+
+
+
+
 .footer {
+  box-shadow:inset 0 5px 20px rgba(0,0,0,0.5);
+  position: relative;
+  margin-top: 50px;
   width: 100%;
   height: 140px;
   background-color:#ee964c;
+}
+
+.footer-feedback{
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-copyright{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-dev{
+  position: absolute;
+  top:50px;
+  right: 270px;
+
+}
+
+.footer-box-name{
+  display:inline-block;
+  position:absolute;
+  right: 70px;
+  top:20px;
+}
+
+.footer-box-logo{
+  display: inline-block;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.footer-dev img{
+width: 100%;
 }
