@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .page{
   max-width: 1400px;
@@ -12,18 +13,15 @@ body {
 }
 .header{
   position: fixed;
-  width: 100%;
   height: 50px;
   top:0;
   left:0;
+  right: 0;
   color: #fff;
   background: #000000;
   opacity: 0.7;
   z-index: 100;
   box-shadow: 0 5px 10px rgba(0,0,0,0.7);
- }
- .header-menu{
-
  }
  .anchor{
    display: block;
@@ -34,11 +32,14 @@ body {
 }
 .header-menu-navigation a{
   position: relative;
+  text-decoration: none;
   display: inline-block;
   top: 12px;
+  padding: 0 5px;
+  line-height: 24px;
   font-size: 20px;
   color: #fff;
-  padding: 0 5px;
+  letter-spacing: 1px;
 }
 
 .header-menu-navigation a:hover{
@@ -80,9 +81,12 @@ border-left: 1px solid #ffffff;
 .header-title{
   position: relative;
   top:240px;
-  font-family: arial;
-  text-align: center;
+  letter-spacing: 2px;
   font-size: 48px;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 49px;
+  font-family: Trebuchet;
 }
 .header-logo img{
   display: block;
@@ -104,14 +108,19 @@ border-left: 1px solid #ffffff;
 .gallery-list {
   text-align: center;
 }
-.gallery-list-item,
+.gallery-list__item,
 .image-services{
   position: relative;
   width: 180px;
   height: 180px;
   display: inline-block;
-  margin: auto 18px;
+  margin: auto 8px;
   text-decoration: none;
+  letter-spacing: 2px;
+      font-size: 38px;
+      text-align: center;
+      line-height: 46px;
+
   color: #000;
 }
 .image-services{/*Искать размеры услуг здесь!!!!!!!!!!!!!!*/
@@ -119,8 +128,8 @@ border-left: 1px solid #ffffff;
   height: 180px;
   margin: 25px 50px;
 }
-.gallery-list-item .image-box,
-.image-services .image-box{
+.gallery-list__item .gallery-list__image,
+.image-services .gallery-list__image{
   overflow: hidden;
   border-radius:100%;
   border: 5px solid #ee964c;
@@ -130,24 +139,32 @@ border-left: 1px solid #ffffff;
   right: 0;
   bottom:0;
 }
-.image-services .image-box{
+.image-services .gallery-list__image{
 border: 0px solid #ee964c;
 }
-.gallery-list-item .image-box img,
-.image-services .image-box img{
+.gallery-list__item .gallery-list__image img,
+.image-services .gallery-list__image img{
   max-width: 100%;
 }
-.gallery-list-item .name{
+.gallery-list__item .gallery-list__name{
   display: block;
   margin-top: 200px;
   font-family: arial;
-  font-size: 35px;
+  font-size: 38px;
   text-align: center;
+  letter-spacing: 2px;
+  line-height: 46px;
+
+
   /*position: absolute;*/
   left: 0;
   right: 0;
   bottom:0;
 }
+/*.name{
+  font-size: 75px;
+}*/
+
 .services{
     text-align: center;
   margin-bottom: 70px;
@@ -164,13 +181,13 @@ border: 0px solid #ee964c;
     padding: 8px 50px;
 }
 .image-services{
-display: inline-block;
-position: relative;
+/*display: inline-block;*/
+/*position: relative;*/
 }
 .images-boxes{
-  width: 900px;
+  /*width: 900px;  Убираем эти размеры, с случае если мы бодавим еще один блок размеры декоратиыной рамки должны адаптироватся под новое количество
   height: 470px;
-  margin: auto;
+  margin: auto;*/
   position: relative;
   margin-bottom: 50px;
 }
@@ -256,7 +273,6 @@ position: relative;
 .service-name-price .price{
   font-size: 20px;
 }
-
 
 .about-me{
   width: 100%;
@@ -359,7 +375,7 @@ margin: 35px 0;
 .advantages__text {
   display: table-cell;
   vertical-align: middle;
-  font-size:30 px;
+  font-size:15px;
   line-height: 1.1;
   font-family:arial;
   color: #fff;
