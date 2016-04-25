@@ -96,6 +96,20 @@ border-left: 1px solid #ffffff;
   margin-bottom: 150px;
 }
 
+ .gallery__title{
+   width: 250px;
+   margin: 0 auto;
+   position: relative;
+   text-align: center;
+   font-size: 48px;
+   line-height: 24px;
+   margin-bottom: 70px;
+ }
+
+ .gallery__title-arrow img{
+   width: 100%;
+ }
+
 .gallery__list {
   list-style: none;
   margin: 0;
@@ -111,13 +125,23 @@ border-left: 1px solid #ffffff;
 .gallery__list li:last-child {
   margin-right: 0;
 }
+.gallery__image{
+  border-radius: 50%;
+  border: 5px solid #ee964c;
+}
 
 .gallery__image--circle {
-  border: 5px solid #ee964c;
-  border-radius: 50%;
+
+}
+
+.box__image--circle {
+  display: inline-block;
+  /*border-radius: 50%;*/
+  overflow: hidden;
 }
 
 .gallery__column{
+
 
 }
 
@@ -131,76 +155,13 @@ border-left: 1px solid #ffffff;
   text-align: center;
 }
 
-
-/*.gallery{
- margin-bottom: 200px;
-}*/
-/*.gallery-title{
-  margin: 0 auto;
-  font-family: arial;
-  font-size: 50px;
-  text-align:center;
-  margin-bottom: 70px;
-}
-.gallery-list {
-  text-align: center;
-}
-.gallery-list__item,
-.image-services{
-  position: relative;
-  width: 180px;
-  height: 180px;
+.services__column{/*Искать размеры услуг здесь!!!!!!!!!!!!!!*/
   display: inline-block;
-  margin: auto 8px;
-  text-decoration: none;
-  letter-spacing: 2px;
-      font-size: 38px;
-      text-align: center;
-      line-height: 46px;
-
-  color: #000;*/
-}
-.image-services{/*Искать размеры услуг здесь!!!!!!!!!!!!!!*/
   width: 180px;
   height: 180px;
   margin: 25px 50px;
 }
-/*.gallery-list__item .gallery-list__image,
-.image-services .gallery-list__image{
-  overflow: hidden;
-  border-radius:100%;
-  border: 5px solid #ee964c;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom:0;
-}*/
-/*.image-services .gallery-list__image{
-border: 0px solid #ee964c;
-}*/
-/*.gallery-list__item .gallery-list__image img,
-.image-services .gallery-list__image img{
-  max-width: 100%;
-}*/
-/*.gallery-list__item .gallery-list__name{
-  display: block;
-  margin-top: 200px;
-  font-family: arial;
-  font-size: 38px;
-  text-align: center;
-  letter-spacing: 2px;
-  line-height: 46px;*/
 
-
-  /*position: absolute;*/
-  /*{left: 0;
-  right: 0;
-  bottom:0;
-}*/
-/*.name{
-  font-size: 75px;
-}*/
 
 .services{
     text-align: center;
@@ -213,14 +174,16 @@ border: 0px solid #ee964c;
   height: 100%;
   margin-bottom: 50px;/*отступ от рамки до изображений*/
 }
-.services-border{
+.services__image{
+  border-radius: 50%;
+  width: 100%;
+}
+
+/*.services-border{
     border: 2px solid;
     padding: 8px 50px;
-}
-.image-services{
-/*display: inline-block;*/
-/*position: relative;*/
-}
+}*/
+
 .images-boxes{
   /*width: 900px;  Убираем эти размеры, с случае если мы бодавим еще один блок размеры декоратиыной рамки должны адаптироватся под новое количество
   height: 470px;
