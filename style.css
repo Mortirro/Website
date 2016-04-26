@@ -326,7 +326,8 @@ margin: 35px 0;
 
 
 
-/**/
+/*advantages-Приемущества*/
+
 .advantages {
 	list-style: none;
 	margin: 0;
@@ -369,20 +370,20 @@ margin: 35px 0;
 }
 
 
-.diploms{
+.about__diploms {
   text-align: center;
 }
 
 
 
-.diploms .fancybox{
+.about__diploms .fancybox{
 display: inline-block;
 height: 201px;
 width: 142px;
 overflow: hidden;
 }
 
-.diploms img{
+.about__diploms img{
 width: 100%;
 
 }
@@ -400,39 +401,39 @@ width: 100%;
   background-color:#ee964c;
 }
 
-.footer-feedback{
+.footer__feedback{
   padding-top: 20px;
   text-align: center;
   color: #fff;
 }
 
-.footer-copyright{
+.footer__copyright{
   padding-top: 20px;
   text-align: center;
 }
 
-.footer-dev{
+.footer__dev{
   position: absolute;
   top:50px;
   right: 270px;
-
 }
 
-.footer-box-name{
+.footer__dev img{
+  width: 100%;
+  }
+
+
+.footer__box-name{
   display:inline-block;
   position:absolute;
   right: 70px;
   top:20px;
 }
 
-.footer-box-logo{
+.footer__box-logo{
   display: inline-block;
   overflow: hidden;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-}
-
-.footer-dev img{
-width: 100%;
 }
