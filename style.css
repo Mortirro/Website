@@ -16,72 +16,70 @@ body {
 
 .header{
   position: fixed;
-  height: 50px;
   top:0;
   left:0;
   right: 0;
-  color: #fff;
-  background: #000000;
-  opacity: 0.7;
+  width: 100%;
+  height: 50px;
+  background: rgba(4,4,4,0.7);
+  box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
   z-index: 100;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.7);
- }
- .anchor{
-   display: block;
-   height: 120px;
- }
-.header__menu-navigation {
-  text-align: center;
 }
-.header__menu-navigation a{
-  position: relative;
-  text-decoration: none;
+.header__menu{
+text-align: center;
+}
+.main-menu__list li + li{
+  border-left: 2px solid #fff;
+}
+.main-menu__list-item{
   display: inline-block;
-  top: 12px;
-  padding: 0 5px;
-  line-height: 24px;
-  font-size: 20px;
+  padding:0 5px;
+}
+.main-menu__link{
+  text-decoration: none;
+  font-size:20px;
   color: #fff;
-  letter-spacing: 1px;
 }
-
-.header__menu-navigation a:hover{
-color: #ee964c;
+.main-menu__link:hover{
+  color: #ef5829;
 }
-
-
-.header__menu-navigationn a + a{
-border-left: 1px solid #ffffff;
-}
-
-.header-feedback {
-  /*float:right;*/
+.header__feedback{
+  float:right;
   position: relative;
-  top:-20px;
+  top:-55px;
   right: 50px;
   display: inline-block;
-}
-.header-feedback a, .footer-feedback a{
-  text-decoration: none;
   color: #fff;
 }
-.header-feedback::before, .footer-feedback::before{
+.header__feedback::before{
   display: inline-block;
-  position: relative;
+  position: relative; /*свойство*/
   top:10px;
   right: 15px;
   content: "";
   background: url("images/phone.png") no-repeat;
-  width: 32px;
+  width: 32px; /*значение*/
   height: 32px;
- }
-.header__promo{
-  min-height: 400px;
-  background: url("images/promo.png") center top no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
 }
-.header__title{
+
+.header__feedback-tel{
+  text-decoration: none;
+  color: #fff;
+}
+.promo{
+min-height: 400px;
+background: url("images/promo.png") center top no-repeat;
+background-size: cover;
+margin-bottom: 50px;
+}
+.header__logo {
+  display: block;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+.promo__title{
   position: relative;
   top:240px;
   letter-spacing: 2px;
@@ -91,28 +89,20 @@ border-left: 1px solid #ffffff;
   line-height: 49px;
   /*font-family: Trebuchet;*/
 }
-.header__logo {
-  display: block;
-  width: 400px;
-  height: auto;
+
+.gallery__title{
+  width: 250px;
   margin: 0 auto;
-  margin-bottom: 150px;
+  position: relative;
+  text-align: center;
+  font-size: 48px;
+  line-height: 24px;
+  margin-bottom: 70px;
 }
- /*gallery*/
 
- .gallery__title{
-   width: 250px;
-   margin: 0 auto;
-   position: relative;
-   text-align: center;
-   font-size: 48px;
-   line-height: 24px;
-   margin-bottom: 70px;
- }
-
- .gallery__title-arrow img{
-   width: 100%;
- }
+.gallery__title-arrow img{
+  width: 100%;
+}
 
 .gallery__list {
   list-style: none;
@@ -124,311 +114,4 @@ border-left: 1px solid #ffffff;
 .gallery__list li {
   display: inline-block;
   margin-right: 15px;
-}
-
-.gallery__list li:last-child {
-  margin-right: 0;
-}
-.gallery__image{
-
-  border: 5px solid #ee964c;
-}
-
-.gallery__image-circle {
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.gallery__image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.gallery__subtitle {
-  text-align: center;
-}
-
-.services__column{/*Искать размеры услуг здесь!!!!!!!!!!!!!!*/
-  display: inline-block;
-  width: 180px;
-  height: 180px;
-  margin: 25px 50px;
-}
-
-
-.services{
-    text-align: center;
-  margin-bottom: 70px;
-}
-.services-title{
-  font-family: arial;
-  font-size: 48px;
-  text-align: center;
-  height: 100%;
-  margin-bottom: 50px;/*отступ от рамки до изображений*/
-}
-.services__image{
-  border-radius: 50%;
-  width: 100%;
-}
-
-/*.services-border{
-    border: 2px solid;
-    padding: 8px 50px;
-}*/
-
-.images-boxes{
-  /*width: 900px;  Убираем эти размеры, с случае если мы бодавим еще один блок размеры декоратиыной рамки должны адаптироватся под новое количество
-  height: 470px;
-  margin: auto;*/
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.images-boxes::before, .images-boxes::after{
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 220px;
-  height: 100%;
-  /*border: 2px solid;*/
-}
-
-.images-boxes::before{
-  border-right: none;
-  left: 0;
-  top: 0;
-}
-
-.images-boxes::after{
-  border-left: none;
-  right: 0;
-  top: 0;
-}
-
-.images-boxes__border-bottom::before,
-.images-boxes__border-bottom::after{
-  display: inline-block;
-  content: "";
-  border-bottom: 2px solid;
-  position: absolute;
-}
-
-.images-boxes__border-bottom::before{
-  width: 300px;
-  bottom: 8px;
-  left: 300px;
-}
-
-.images-boxes__border-bottom::after{
-  width: 400px;
-  left: 250px;
-  bottom: -4px;
-}
-
-
-.service-name-price{
-  float:inherit;
-  font-family: arial;
-  font-size: 35px;
-  color: #fff;
-  text-align: center;/*!!!*/
-  width:100%; /*коробка для текста*/
-  position: absolute;
-  bottom: 15px;
-}
-.service-name-price .price{
-  font-size: 20px;
-}
-
-.about__me{
-  width: 100%;
-  position: absolute;
-  left: 0;
-  text-align: center;
-  font-size: 35px;
-  color: #fff;
-  background-color:#f15a25;
-}
-
-.about__name{
-padding: 10px 0;
-/*margin: 30px auto;*/
-}
-
-
-.about-body{
-width: 900px;
-overflow: hidden;
-margin: 0 auto;
-font-family: sans-serif;
-/*background-color: #5c1414;*/
-position: relative;
-}
-
-.about-sidebar{
-width: 350px;
-float:left;
-/*border: 1px solid #c72f2f;*/
-}
-
-.about-image {
-  overflow: hidden;
-  border-radius:100%;
-  height: 350px;
-}
-.about-image img {
-  width: 100%;
-}
-
-.about-sidebar-list{
-  /*background-color: rgb(38, 152, 16);*/
-  text-align: center;
-  font-family: arial;
-  font-size: 35px;
-  line-height: 50%;
-  margin: 20px;
-}
-
-.about-label, .about-text{
-  font-size: 70%;
-}
-.about-content{
-overflow: hidden;
-/*border: 1px solid;*/
-}
-.about-list{
-margin: 35px 0;
-}
-
-.about-title{
-  font-family: arial;
-  font-size: 40px;
-}
-
-.about-title-inside{
-  font-size: 75%;
-}
-
-
-
-.about-description__contacts__phone a{
-  text-decoration: none;
-  color:#f15a25;
-}
-
-
-
-/*advantages-Приемущества*/
-
-.advantages {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
-.advantages__item {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.advantages__circle {
-  display: table;
-  margin-right: 20px;
-  vertical-align: middle;
-	width: 130px;
-	height: 130px;
-	border-radius: 50%;
-}
-.advantages__text {
-  display: table-cell;
-  vertical-align: middle;
-  font-size:15px;
-  line-height: 1.1;
-  font-family:arial;
-  color: #fff;
-}
-
-.advantages__text-big {
-	font-size:42px ;
-}
-.advantages__circle--color-1 {
-  background-color: #f88b65;
-}
-.advantages__circle--color-2 {
-  background-color: #f15a23;
-}
-.advantages__circle--color-3 {
-  background-color: #ee1b24;
-}
-
-
-.about__diploms {
-  text-align: center;
-}
-
-
-
-.about__diploms .fancybox{
-display: inline-block;
-height: 201px;
-width: 142px;
-overflow: hidden;
-}
-
-.about__diploms img{
-width: 100%;
-
-}
-
-
-
-
-
-.footer {
-  box-shadow:inset 0 5px 20px rgba(0,0,0,0.5);
-  position: relative;
-  margin-top: 50px;
-  width: 100%;
-  height: 140px;
-  background-color:#ee964c;
-}
-
-.footer__feedback{
-  padding-top: 20px;
-  text-align: center;
-  color: #fff;
-}
-
-.footer__copyright{
-  padding-top: 20px;
-  text-align: center;
-}
-
-.footer__dev{
-  position: absolute;
-  top:50px;
-  right: 270px;
-}
-
-.footer__dev img{
-  width: 100%;
-  }
-
-
-.footer__box-name{
-  display:inline-block;
-  position:absolute;
-  right: 70px;
-  top:20px;
-}
-
-.footer__box-logo{
-  display: inline-block;
-  overflow: hidden;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
 }
