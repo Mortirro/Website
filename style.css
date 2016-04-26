@@ -11,6 +11,9 @@ body {
   width: 900px;
   margin: 0 auto;
 }
+
+/*header*/
+
 .header{
   position: fixed;
   height: 50px;
@@ -27,10 +30,10 @@ body {
    display: block;
    height: 120px;
  }
-.header-menu-navigation {
+.header__menu-navigation {
   text-align: center;
 }
-.header-menu-navigation a{
+.header__menu-navigation a{
   position: relative;
   text-decoration: none;
   display: inline-block;
@@ -42,12 +45,12 @@ body {
   letter-spacing: 1px;
 }
 
-.header-menu-navigation a:hover{
+.header__menu-navigation a:hover{
 color: #ee964c;
 }
 
 
-.header-menu-navigation a + a{
+.header__menu-navigationn a + a{
 border-left: 1px solid #ffffff;
 }
 
@@ -72,13 +75,13 @@ border-left: 1px solid #ffffff;
   width: 32px;
   height: 32px;
  }
-.header-promo{
+.header__promo{
   min-height: 400px;
   background: url("images/promo.png") center top no-repeat;
   background-size: cover;
   margin-bottom: 50px;
 }
-.header-title{
+.header__title{
   position: relative;
   top:240px;
   letter-spacing: 2px;
@@ -86,15 +89,16 @@ border-left: 1px solid #ffffff;
   text-align: center;
   color: #FFFFFF;
   line-height: 49px;
-  font-family: Trebuchet;
+  /*font-family: Trebuchet;*/
 }
-.header-logo img{
+.header__logo {
   display: block;
   width: 400px;
   height: auto;
   margin: 0 auto;
   margin-bottom: 150px;
 }
+ /*gallery*/
 
  .gallery__title{
    width: 250px;
@@ -126,17 +130,13 @@ border-left: 1px solid #ffffff;
   margin-right: 0;
 }
 .gallery__image{
-  border-radius: 50%;
+
   border: 5px solid #ee964c;
 }
 
-.gallery__image--circle {
-
-}
-
-.box__image--circle {
+.gallery__image-circle {
   display: inline-block;
-  /*border-radius: 50%;*/
+  border-radius: 50%;
   overflow: hidden;
 }
 
@@ -213,7 +213,8 @@ border-left: 1px solid #ffffff;
   top: 0;
 }
 
-.images-boxes__border-bottom::before, .images-boxes__border-bottom::after{
+.images-boxes__border-bottom::before,
+.images-boxes__border-bottom::after{
   display: inline-block;
   content: "";
   border-bottom: 2px solid;
@@ -247,7 +248,7 @@ border-left: 1px solid #ffffff;
   font-size: 20px;
 }
 
-.about-me{
+.about__me{
   width: 100%;
   position: absolute;
   left: 0;
@@ -257,7 +258,7 @@ border-left: 1px solid #ffffff;
   background-color:#f15a25;
 }
 
-.about-me__text{
+.about__name{
 padding: 10px 0;
 /*margin: 30px auto;*/
 }

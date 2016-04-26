@@ -18,76 +18,83 @@
   </head>
 <body>
   <div class="page">
+
+    <!-- header -->
   <div class="header">
-    <div class="header-menu">
-      <div class="header-menu-navigation">
-        <a href="#gallery">Галерея</a>
-        <a href="#services">Услуги</a>
-        <a href="#about">Обо мне</a>
+    <div class="header__menu">
+      <div class="header__menu-navigation">
+        <a class="menu-navigation__item" href="#gallery">Галерея</a>
+        <a class="menu-navigation__item" href="#services">Услуги</a>
+        <a class="menu-navigation__item" href="#about">Обо мне</a>
       </div>
     </div>
     <div class="header-feedback">
       Анна
-      <a href="tel:+380662032523">+38 (066) 203-25-23</a>
+      <a class="header__feedback-tel" href="tel:+380662032523">+38 (066) 203-25-23</a>
     </div>
   </div>
-  <div class="header-promo">
-    <div class="header-title">свадебные и вечерние
+  <div class="header__promo">
+    <section class="header__title">свадебные и вечерние
     <br>прически
-    </div>
+    </section>
   </div>
-<div class="header-logo">
+<div class="header__logo">
   <img src="images/logo.svg">
 </div>
-<!--  -->
+
+<!-- gallery -->
 <section class="gallery">
+<a class="anchor" name="gallery"></a>
+<div class="wrap">
  <h1 class="gallery__title">Галерея
-   <div class="gallery__title-arrow">  <!--*??????-->
+   <div class="gallery__title-arrow">  <!--*arrow как модификатор?-->
      <img src="images/the_arrow_for_the_gallery.png" alt="arrow">
    </div>
  </h1>
+
 <ul class="gallery__list">
 <li>
-  <div class="gallery__column box__image--circle">
-    <img class="gallery__image" src="images/gallery/nakrutki.jpg" alt="Накрутки">
+  <div class="gallery__column ">
+    <img class="gallery__image gallery__image-circle" src="images/servises background 1.jpg" alt="Накрутки">
     <h2 class="gallery__subtitle">Накрутки</h2>
   </div>
 </li>
 <li>
-  <div class="gallery__column box__image--circle">
-    <img class="gallery__image" src="images/gallery/bukli.jpg" alt="Букли">
+  <div class="gallery__column">
+    <img class="gallery__image gallery__image-circle" src="images/gallery/bukli.jpg" alt="Букли">
     <h2 class="gallery__subtitle">Букли</h2>
   </div>
 </li>
 
 <li>
-  <div class="gallery__column box__image--circle">
-    <img class="gallery__image" src="images/gallery/pletenya.jpg" alt="Плетения">
+  <div class="gallery__column">
+    <img class="gallery__image gallery__image-circle" src="images/gallery/pletenya.jpg" alt="Плетения">
     <h2 class="gallery__subtitle">Плетения</h2>
   </div>
 </li>
 
 <li>
-  <div class="gallery__column box__image--circle">
-    <img class="gallery__image" src="images/gallery/deti.jpg" alt="Детские">
+  <div class="gallery__column">
+    <img class="gallery__image gallery__image-circle" src="images/gallery/deti.jpg" alt="Детские">
     <h2 class="gallery__subtitle">Детские</h2>
   </div>
 </li>
 </ul>
+</div>
 </section>
 
 <!-- services -->
 
 <div class="services">
-  <a class="anchor" name="services"></a>
-  <div class="wrap">
-    <div class="services__title">
-      <span class="services-border">Услуги<span>
-    </div>
+<a class="anchor" name="services"></a>
+<div class="wrap">
+  <div class="services__title">
+    <span class="services__border">Услуги<span>
+  </div>
 
       <div class="images-boxes">
+
         <div class="images-boxes__border-bottom">
-
         <div class="services__column">
           <div class="box__image--circle">
             <img  class="services__image" src="images/servises background 1.jpg">
@@ -135,7 +142,7 @@
               <div class="price">250-350 грн.</div>
             </div>
         </div>
-        
+
         <div class="services__column">
           <div class="box__image--circle">
             <img  class="services__image" src="images/servises background 1.jpg">
@@ -145,20 +152,16 @@
               <div class="price">250-350 грн.</div>
             </div>
         </div>
-
-
-
-
-            </div>
-        </div>
-        </div>
+      </div>
     </div>
+  </div>
+</div>
 
-
+<!-- About -->
 
 <div class="about">
-<div class="about-me">
-  <div class="about-me__text">Обо мне</div>
+<div class="about__me">
+  <div class="about__name">Обо мне</div>
 </div>
 <div class="about-body">
 
@@ -214,10 +217,6 @@
           </div>
     </div>
     </div>
-
-
-
-
 
 <div class="diploms">
       <a class="fancybox" rel="group" href="images/diploms/diplom_1.jpg">
