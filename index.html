@@ -18,11 +18,7 @@
 
   </head>
 <body>
-
-  <div class="page">
-
-    <!-- header -->
-  <div class="header">
+  <header class="header">
     <div class="header__menu">
       <nav class="main-menu">
         <ul class="main-menu__list">
@@ -38,134 +34,128 @@
         </ul>
       </nav>
     </div>
-
     <div class="header__feedback">
-      Анна
+      <span class="header__feedback-label">Анна</span>
       <a class="header__feedback-tel" href="tel:+380662032523">+38 (066) 203-25-23</a>
     </div>
-  </div>
+  </header>
 
   <section class="promo">
     <div class="promo__title">свадебные и вечерние прически</div>
   </section>
-<div class="header__logo">
-  <img src="images/logo.svg" alt="">
-</div>
+  <div class="promo-logo">
+    <img class="promo-logo__image" src="images/logo.svg" alt="">
+  </div>
 
 <!-- gallery -->
 <section id="gallery" class="gallery">
-<div class="wrap">
-
- <h1 class="gallery__title">Галерея
-   <div class="gallery__title-arrow">  <!--*arrow как модификатор?-->
-     <img src="images/the_arrow_for_the_gallery.png" alt="arrow">
-   </div>
- </h1>
-
-<ul class="gallery__list">
-<li>
-  <div class="gallery__column">
-    <img class="gallery__image gallery__image-circle" src="images/servises background 1.jpg" alt="Накрутки">
-    <h2 class="gallery__subtitle">Накрутки</h2>
+  <div class="wrap">
+   <h1 class="gallery__title">Галерея</h1>
+   <ul class="gallery__list">
+      <li class="gallery__list-item">
+        <div class="gallery__column">
+          <div class="gallery__image-box">
+            <img class="gallery__image" src="images/gallery/nakrutki.jpg" alt="Накрутки">
+          </div>
+          <h2 class="gallery__subtitle">Накрутки</h2>
+        </div>
+      </li>
+      <li class="gallery__list-item">
+        <div class="gallery__column">
+          <div class="gallery__image-box">
+            <img class="gallery__image" src="images/gallery/bukli.jpg" alt="Накрутки">
+          </div>
+          <h2 class="gallery__subtitle">Букли</h2>
+        </div>
+      </li>
+      <li class="gallery__list-item">
+        <div class="gallery__column">
+          <div class="gallery__image-box">
+            <img class="gallery__image" src="images/gallery/pletenya.jpg" alt="Плетения">
+          </div>
+          <h2 class="gallery__subtitle">Плетения</h2>
+        </div>
+      </li>
+      <li class="gallery__list-item">
+        <div class="gallery__column">
+          <div class="gallery__image-box">
+            <img class="gallery__image" src="images/gallery/deti.jpg" alt="Накрутки">
+          </div>
+          <h2 class="gallery__subtitle">Накрутки</h2>
+        </div>
+      </li>
+  </ul>
   </div>
-</li>
-<li>
-  <div class="gallery__column">
-    <img class="gallery__image gallery__image-circle" src="images/gallery/bukli.jpg" alt="Букли">
-    <h2 class="gallery__subtitle">Букли</h2>
-  </div>
-</li>
-
-<li>
-  <div class="gallery__column">
-    <img class="gallery__image gallery__image-circle" src="images/gallery/pletenya.jpg" alt="Плетения">
-    <h2 class="gallery__subtitle">Плетения</h2>
-  </div>
-</li>
-
-<li>
-  <div class="gallery__column">
-    <img class="gallery__image gallery__image-circle" src="images/gallery/deti.jpg" alt="Детские">
-    <h2 class="gallery__subtitle">Детские</h2>
-  </div>
-</li>
-</ul>
-</div>
 </section>
 
 <!-- services -->
 
 <div id="services" class="services">
-
-<div class="wrap">
-
-  <div class="services__title">
-    <span class="services__title-inner">Услуги<span>
-  </div>
+  <div class="wrap">
+    <div class="services__title">
+      <span class="services__title-inner">Услуги<span>
+    </div>
     <div class="services__items">
-
-      <div class="item">
+      <div class="services__item">
         <div class="services__image-box">
-          <img class="services__image" src="images/gallery/deti.jpg" alt="">
+          <img class="services__image" src="images/servises/servises-background_1.jpg" alt="">
         </div>
         <div class="services__item-content">
-          <div class="services__item-title">Пробная прическа</div>
+          <div class="services__item-label">Пробная</div>
+          <div class="services__item-title">прическа</div>
           <div class="services__item-price">250-350 грн.</div>
         </div>
       </div>
-
-      <div class="item">
+      <div class="services__item">
         <div class="services__image-box">
-          <img class="services__image" src="images/gallery/deti.jpg" alt="">
+          <img class="services__image" src="images/servises/servises-background_2.jpg" alt="">
         </div>
         <div class="services__item-content">
-          <div class="services__item-title">Пробная прическа</div>
+          <div class="services__item-label">Пробная</div>
+          <div class="services__item-title">прическа</div>
           <div class="services__item-price">250-350 грн.</div>
         </div>
       </div>
-
-      <div class="item">
+      <div class="services__item">
         <div class="services__image-box">
-          <img class="services__image" src="images/gallery/deti.jpg" alt="">
+          <img class="services__image" src="images/servises/servises-background_1.jpg" alt="">
         </div>
         <div class="services__item-content">
-          <div class="services__item-title">Пробная прическа</div>
+          <div class="services__item-label">Пробная</div>
+          <div class="services__item-title">прическа</div>
           <div class="services__item-price">250-350 грн.</div>
         </div>
       </div>
-
-      <div class="item">
+      <div class="services__item">
         <div class="services__image-box">
-          <img class="services__image" src="images/gallery/deti.jpg" alt="">
+          <img class="services__image" src="images/servises/servises-background_2.jpg" alt="">
         </div>
         <div class="services__item-content">
-          <div class="services__item-title">Пробная прическа</div>
+          <div class="services__item-label">Пробная</div>
+          <div class="services__item-title">прическа</div>
           <div class="services__item-price">250-350 грн.</div>
         </div>
       </div>
-
-      <div class="item">
+      <div class="services__item">
         <div class="services__image-box">
-          <img class="services__image" src="images/gallery/deti.jpg" alt="">
+          <img class="services__image" src="images/servises/servises-background_1.jpg" alt="">
         </div>
         <div class="services__item-content">
-          <div class="services__item-title">Пробная прическа</div>
+          <div class="services__item-label">Пробная</div>
+          <div class="services__item-title">прическа</div>
           <div class="services__item-price">250-350 грн.</div>
         </div>
       </div>
-
-      <div class="item">
+      <div class="services__item">
         <div class="services__image-box">
-          <img class="services__image" src="images/gallery/deti.jpg" alt="">
+          <img class="services__image" src="images/servises/servises-background_2.jpg" alt="">
         </div>
         <div class="services__item-content">
-          <div class="services__item-title">Пробная прическа</div>
+          <div class="services__item-label">Пробная</div>
+          <div class="services__item-title">прическа</div>
           <div class="services__item-price">250-350 грн.</div>
         </div>
       </div>
-
-
-
     </div>
   </div>
 </div>
@@ -173,25 +163,30 @@
 <!-- About -->
 
 <section id="about" class="about">
-
-<div class="about__title-header">Обо мне
-</div>
-<div class="about__body">
-  <div class="about__sidebar">
-    <div class="about__card">
-      <img lass="about__card-img" src="images/avatar2.jpg">
-    </div>
-    <div class="about__card-list">
-      <div class="about__card-text">Мастер</div>
-      <div class="about__card-title">Анна Хрущ</div>
-      <div class="about__card-label">35 лет</div>
+  <div class="about__header">
+    <div class="wrap">
+      <div class="about__header-title">Обо мне</div>
     </div>
   </div>
-    <div class="about__content">
-    <div class="about__title">Привет
-      <div class="about__title-small">немного обо мне:</div>
-    </div>
+  <div class="about__body">
+    <div class="wrap">
+      <div class="about__sidebar">
+        <div class="about__card">
+          <div class="about__card-box">
+            <img lass="about__card-img" src="images/avatar2.jpg">
+          </div>
+          <div class="about__card-list">
+            <div class="about__card-text">Мастер</div>
+            <div class="about__card-title">Анна Хрущ</div>
+            <div class="about__card-label">35 лет</div>
+          </div>
+          </div>
+        </div>
+      <div class="about__content">
 
+        <div class="about__title">Привет
+          <div class="about__SUBTITLE">немного обо мне:</div>
+        </div>
         <ul class="advantages">
           <li class="advantages__item">
             <span class="advantages__circle advantages__circle-color1">
@@ -210,64 +205,63 @@
             </span>
           </li>
         </ul>
-
-      <p class="about__text">Меня зовут Аня, я специалист в сфере парикмахерских услуг с опытом работы более 15 лет. Основное направление моей деятельности это свадебные и вечерние прически. Подтверждением моего высокого профессионального уровня являются призовые места в конкурсах и довольные клиенты.
-      <br>Я выполняю как существующие так и индивидуальные креативные работы.</p>
-
-    <div class="about__contacts">
-      <div class="about__contacts-item">
-        <span class="about__contacts-label">Телефон:</span>
-        <a class="about__contacts-tel" href="tel:+380662032523">+38 (066) 203-25-23</a>
+        <p class="about__text">Меня зовут Аня, я специалист в сфере парикмахерских услуг с опытом работы более 15 лет. Основное направление моей деятельности это свадебные и вечерние прически. Подтверждением моего высокого профессионального уровня являются призовые места в конкурсах и довольные клиенты.
+        <br>Я выполняю как существующие так и индивидуальные креативные работы.</p>
+        <div class="about__contacts">
+          <div class="about__contacts-item">
+            <span class="about__contacts-label">Телефон:</span>
+            <a class="about__contacts-tel" href="tel:+380662032523">+38 (066) 203-25-23</a>
+          </div>
+          <div class="about__contacts-item">
+            <span class="about__contacts-label">Email:</span>
+            <a class="about__contacts-email" href="mailto:info@hairstyle.com.ua">info@hairstyle.com.ua</a>
+          </div>
+          <div class="about__contacts-item">г.Киев</div>
+        </div>
       </div>
-      <div class="about__contacts-item">
-        <span class="about__contacts-label">Email:</span>
-        <a class="about__contacts-email" href="mailto:info@hairstyle.com.ua">info@hairstyle.com.ua</a>
-      </div>
-      <div class="about__contacts-item">г.Киев</div>
     </div>
   </div>
-</div>
-
-<div class="about__diploms">
-    <a class="fancybox" rel="group" href="images/diploms/diplom_1.jpg">
-      <img src="images/diploms/diplom_1_small.jpg" alt="" />
-    </a>
-    <a class="fancybox" rel="group" href="images/diploms/diplom_2.jpg">
-      <img src="images/diploms/diplom_2_small.jpg" alt="" />
-    </a>
-    <a class="fancybox" rel="group" href="images/diploms/diplom_3.jpg">
-      <img src="images/diploms/diplom_3_small.jpg" alt="" />
-    </a>
-    <a class="fancybox" rel="group" href="images/diploms/diplom_4.jpg">
-      <img src="images/diploms/diplom_4_small.jpg" alt="" />
-    </a>
-    <a class="fancybox" rel="group" href="images/diploms/diplom_5.jpg">
-      <img src="images/diploms/diplom_5_small.jpg" alt="" />
-    </a>
-    <a class="fancybox" rel="group" href="images/diploms/diplom_6.jpg">
-      <img src="images/diploms/diplom_6_small.jpg" alt="" />
-    </a>
-</div>
-</div>
-</div>
-<div class="footer">
-  <div class="footer__feedback">
-      Анна
-      <a href="tel:+380662032523">+38 (066) 203-25-23</a>
-  </div>
-  <div class="footer__copyright">
-    Все права защищены.&copy;
-    <br>2015-2016г.
-  </div>
-  <div class="footer__dev">
-    <span class="footer__box-name">Разработка</span>
-    <a class="footer__box-logo" href="https://www.facebook.com/dennis.putiy">
-      <img src="images/develop_logo.jpg" alt="develop_logo" />
-    </a>
-  </div>
-</div>
-
-
 </section>
+
+<div class="diploms">
+  <a class="diploms__item fancybox" rel="group" href="images/diploms/diplom_1.jpg">
+    <img src="images/diploms/diplom_1_small.jpg" alt="" />
+  </a>
+  <a class="diploms__item fancybox" rel="group" href="images/diploms/diplom_2.jpg">
+    <img src="images/diploms/diplom_2_small.jpg" alt="" />
+  </a>
+  <a class="diploms__item fancybox" rel="group" href="images/diploms/diplom_3.jpg">
+    <img src="images/diploms/diplom_3_small.jpg" alt="" />
+  </a>
+  <a class="diploms__item fancybox" rel="group" href="images/diploms/diplom_4.jpg">
+    <img src="images/diploms/diplom_4_small.jpg" alt="" />
+  </a>
+  <a class="diploms__item fancybox" rel="group" href="images/diploms/diplom_5.jpg">
+    <img src="images/diploms/diplom_5_small.jpg" alt="" />
+  </a>
+  <a class="diploms__item fancybox" rel="group" href="images/diploms/diplom_6.jpg">
+    <img src="images/diploms/diplom_6_small.jpg" alt="" />
+  </a>
+</div>
+
+      <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer__feedback">
+        <span class="footer__feedback-label">Анна</span>
+        <a href="tel:+380662032523">+38 (066) 203-25-23</a>
+      </div>
+      <div class="footer__copyright">
+        Все права защищены.&copy;
+        <br>2015-2016г.
+      </div>
+      <div class="footer__dev">
+        <span class="footer__box-name">Разработка</span>
+        <a class="footer__box-logo" href="https://www.facebook.com/dennis.putiy">
+          <img src="images/develop_logo.jpg" alt="develop_logo" />
+        </a>
+      </div>
+    </footer>
+
   </body>
 </html>
