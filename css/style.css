@@ -425,7 +425,6 @@ color: #808080;
   box-shadow: 10px 10px 10px rgba(0,0,0,0.3)
 }
 
-
 /*.diploms{
  position:relative;
  width:calc(60% - 40px);
@@ -444,17 +443,18 @@ color: #808080;
  border-radius:5px;
  box-shadow: 0 0 0 1px #fff;
  border:1px solid #eee;
- transition:all .50s ease-in-out;
- -webkit-transition:all .50s ease-in-out;
- -moz-transition:all .50s ease-in-out;
- -o-transition:all .50s ease-in-out;
- -ms-transition:all .50s ease-in-out;
+ transition:all .30s ease-in-out;
+ -webkit-transition:all .30s ease-in-out;
+ -moz-transition:all .30s ease-in-out;
+ -o-transition:all .30s ease-in-out;
+ -ms-transition:all .30s ease-in-out;
 }
 .diploms__item-fancybox:hover > img{
  width: 150%;
  height: 150%;
+ /*transform-origin:100% 100%;*/
+-webkit-transform-origin:100% 100%;
  }
-
 
 
 /*footer*/
