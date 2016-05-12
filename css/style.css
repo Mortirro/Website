@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
 }
 .wrap{
-  width: 900px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -90,7 +90,7 @@ text-align: center;
 }
 .promo-logo__image {
   display: block;
-  width: 450px;
+  width: 35%;  /*500px*/
   height: auto;
   margin: 0 auto;
   margin-bottom: 70px;
@@ -104,7 +104,7 @@ text-align: center;
   text-align: center;
   color: #FFFFFF;
   line-height: 49px;
-  /*font-family: Trebuchet;*/
+
 }
 
 /*gallery */
@@ -412,7 +412,7 @@ color: #808080;
 
 .diploms {
   text-align:center;
-  width: 900px;
+  width: 68%; /*900px*/
   margin: 0 auto;
 }
 .diploms:last-child{
@@ -437,14 +437,11 @@ color: #808080;
  transition:all .50s ease-in-out;
  -webkit-transition:all .50s ease-in-out;
  -moz-transition:all .50s ease-in-out;
- -o-transition:all .50s ease-in-out;
  -ms-transition:all .50s ease-in-out;
-
+ transform-origin:50% 50%;
 }
 .diploms__item-fancybox:hover > img{
- width: 150%;
- height: 150%;
- transform-origin:50% 50%;
+  transform: scale(1.2);
  }
 
 
