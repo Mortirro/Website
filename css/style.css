@@ -5,9 +5,9 @@ body {
   color: #000;
 }
 
-/** {
+* {
   outline: 1px solid blue !important;
-}*/
+}
 
 .page{
   max-width: 1400px;
