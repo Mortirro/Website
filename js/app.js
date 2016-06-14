@@ -10,14 +10,39 @@ $(document).ready(function() {
 	});
 
   $(".various").fancybox({
-		maxWidth	: 1000,
-		maxHeight	: 800,
-		fitToView	: false,
-		width		: '70%',
-		height		: '70%',
-		autoSize	: false,
-		closeClick	: false,
-		openEffect	: 'none',
-		closeEffect	: 'none'
+		// maxWidth	: '100%',
+		// maxHeight	: 800,
+    // autoCenter:true,
+		// fitToView	: false,
+		// width		: '100%',
+		// height		: 'auto',
+		// autoSize	: false,
+		// closeClick	: false,
+		// openEffect	: 'none',
+		// closeEffect	: 'none'
 	});
+
+
+// меню
+class MenuHandler {
+    constructor() {
+        this.menuTrigger = $('#menu-trigger');
+        this.menu = $('.main-menu');
+
+        this.toggleMenu();
+    }
+
+    toggleMenu() {
+        this.menuTrigger.on('click', ()=> {
+            this.menuTrigger.toggleClass('is-open');
+            this.menu.toggleClass('is-open');
+        });
+    }
+}
+
+$(document).ready(function ($) {
+    var menuHandler = new MenuHandler('.main-menu');
+});
+
+
 });
