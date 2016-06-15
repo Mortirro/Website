@@ -186,6 +186,13 @@ text-align: center;
   color: #fff;
 
 }
+.header__feedback-tel{
+  color: #fff;
+}
+.header__feedback-tel:hover{
+  color: #F15A24;
+  text-decoration: none;
+}
 .header__feedback::before{
   display: inline-block;
   position: relative; /*свойство*/
@@ -197,10 +204,6 @@ text-align: center;
   height: 32px;
 }
 
-.header__feedback:hover{
-  color: #F15A24;
-  text-decoration: none;
-}
 
 .promo{
   position: relative;
@@ -678,66 +681,189 @@ color: #808080;
 
  /*footer*/
 
- .footer {
+.footer {
+
+display: table;
+
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+  background-color:#ee964c;
+  box-shadow:inset 0 10px 30px rgba(0,0,0,0.5);
+}
+
+
+.footer__feedback{
+  /*float:left;*/
+  text-align: center;
+
+
+  padding-top: 20px;
+  font-size: 19px;
+  font-style: italic;
+  color: #fff;
+}
+
+.footer__feedback::before{
+   display: inline-block;
+   position: relative;
+   top:10px;
+   right: 15px;
+   content: "";
+   background: url("../images/phone.png") no-repeat;
+   width: 32px;
+   height: 32px;
+}
+
+.footer__feedback-phone{
+
+color: #fff;
+}
+.footer__feedback-phone:hover{
+  color: #F15A24;
+  text-decoration: none;
+}
+
+.footer__dev{
+text-align: center;
+}
+
+.footer__dev img{
+ width: 100%;
+ }
+
+.footer__box-logo{
+  display: inline-block;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /*position: absolute;
+  right: 20%;*/
+}
+
+.footer__copyright{
+  /*float:left;*/
+
+  padding-top: 20px;
+  text-align: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.footer__dev{
+  position: absolute;
+
+  top:60px;
+  right: 18vw;
+}*/
+/*.footer__dev img{
+ width: 100%;
+}*/
+
+/*.footer__box-name{
+  display:inline-block;
+  position:absolute;
+  right: 70px;
+  top:20px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*.footer {
    position: relative;
    margin-top: 50px;
    width: 100%;
    height: 140px;
    background-color:#ee964c;
    box-shadow:inset 0 10px 30px rgba(0,0,0,0.5);
- }
+ }*/
 
- .footer__feedback{
+/* .footer__feedback{
    padding-top: 20px;
    text-align: center;
    font-size: 19px;
    font-style: italic;
    color: #fff;
- }
+ }*/
 
-.footer__feedback::before{
+/*.footer__feedback::before{
    display: inline-block;
-   position: relative; /*свойство*/
+   position: relative;
    top:10px;
    right: 15px;
    content: "";
    background: url("../images/phone.png") no-repeat;
-   width: 32px; /*значение*/
+   width: 32px;
    height: 32px;
- }
+ }*/
 
 
- .footer__feedback-phone{
+ /*.footer__feedback-phone{
  text-decoration: none;
  color: #fff;
- }
- .footer__copyright{
+ }*/
+ /*.footer__copyright{
    padding-top: 20px;
    text-align: center;
- }
- .footer__dev{
-   position: absolute;
+ }*/
 
-   top:60px;
-   right: 18vw;
- }
- .footer__dev img{
-  width: 100%;
- }
 
- .footer__box-name{
-   display:inline-block;
-   position:absolute;
-   right: 70px;
-   top:20px;
- }
- .footer__box-logo{
-   display: inline-block;
-   overflow: hidden;
-   width: 60px;
-   height: 60px;
-   border-radius: 50%;
- }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*@media*/
 
@@ -816,7 +942,10 @@ color: #808080;
     width: 23px;
     height: 22px;
     }
-
+    .header__feedback:hover{
+      color: #F15A24;
+      text-decoration: none;
+    }
 
     .promo__title{
     top:200px;
