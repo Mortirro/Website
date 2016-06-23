@@ -13,11 +13,16 @@ dialog {
  /*height: 40%;*/
  box-shadow: 0 0 100px rgba(185, 50, 50, 0.8);
  border-radius: 10px;
+ position: fixed;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
  }
-.button{
-  position: fixed;
-  z-index: 98;
-}
+
+ a:focus{
+   outline:none;
+ }
 
 
 
@@ -659,8 +664,10 @@ color: #808080;
 
 .diploms {
   text-align:center;
-  /*width: 68%; /*900px*/
   margin: 0 auto;
+}
+.diploms-mobile{
+  display: none;
 }
 .diploms:last-child{
   margin-right: 0;
@@ -942,11 +949,7 @@ border: 0.5vw solid;
 }
 .about__card-label{
   font-size: 6vw;
-  }
-
-/*.about__text{
-  width: 80%;
-}*/
+}
 
 /*advantages*/
 
@@ -960,6 +963,17 @@ border: 0.5vw solid;
   .advantages__text-big{
   font-size:20px;
   }
+
+  .diploms {
+    display: none;
+  }
+  .diploms-mobile{
+    display: block;
+  }
+
+
+
+
 }
 
 @media (max-width:760px){

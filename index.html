@@ -25,12 +25,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif] -->
 
-
-    <!-- Fotorama -->
-    <link href="fotorama-4.6.4/fotorama.css" rel="stylesheet">
-
-
-
   </head>
   <body>
 
@@ -81,66 +75,180 @@
           <img class="promo__logo__image" src="images/logo.svg" alt=""/>
         </div>
 
-  <!-- gallery -->
-  <div class="ancor" id="gallery"></div>
-  <section class="container gallery">
-    <div class="wrap">
-     <h1 class="gallery__title">Галерея</h1>
-     <div class="gallery__list">
-        <div class="gallery__list-item  col-sm-3 col-xs-6"> <!--col-sm-offset-2-->
-          <div class="gallery__column">
-            <div class="gallery__image-box">
-              <a class="various" data-fancybox-type="iframe" href="nakrutki.html">
-                <img class="gallery__image" src="images/gallery/nakrutki.jpg" alt="Накрутки">
-              </a>
+        <!-- gallery -->
+        <div class="ancor" id="gallery"></div>
+        <section class="container gallery">
+          <div class="wrap">
+           <h1 class="gallery__title">Галерея</h1>
+           <div class="gallery__list">
+
+              <div class="gallery__list-item  col-sm-3 col-xs-6">
+                  <div class="gallery__image-box">
+                    <!--Добавил data-toggle="modal" data-target="#gallery1"-->
+                    <a data-toggle="modal" href="#gallery1" data-toggle="modal" data-target="#gallery1">
+                      <img class="gallery__image" src="images/gallery/nakrutki.jpg" alt="Накрутки">
+                    </a>
+                  </div>
+                  <h2 class="gallery__subtitle">Накрутки</h2>
+                </div>
+              </div>
+
+              <div class="gallery__list-item col-sm-3 col-xs-6">
+                <div class="gallery__column">
+                  <div class="gallery__image-box">
+                    <a data-toggle="modal" href="#gallery2" data-toggle="modal" data-target="#gallery2">
+                      <img class="gallery__image" src="images/gallery/bukli.jpg" alt="Накрутки">
+                    </a>
+                  </div>
+                  <h2 class="gallery__subtitle">Букли</h2>
+                </div>
+              </div>
+
+              <div class="gallery__list-item col-sm-3 col-xs-6">
+                <div class="gallery__column">
+                  <div class="gallery__image-box">
+                    <a data-toggle="modal" href="#gallery3" data-toggle="modal" data-target="#gallery3">
+                      <img class="gallery__image" src="images/gallery/pletenya.jpg" alt="Накрутки">
+                    </a>
+                  </div>
+                  <h2 class="gallery__subtitle">Плетения</h2>
+                </div>
+              </div>
+
+              <div id="openDialog" class="gallery__list-item col-sm-3 col-xs-6">
+                <div class="gallery__column">
+                  <div class="gallery__image-box">
+                    <a data-toggle="modal" href="#gallery4" data-toggle="modal" data-target="#gallery4">
+                      <img class="gallery__image" src="images/gallery/deti.jpg" alt="Накрутки">
+                    </a>
+                  </div>
+                  <h2 class="gallery__subtitle">Детские</h2>
+                </div>
+              </div>
+
+          </div>
+        </section>
+
+        <!--Library gallerys-->
+
+        <div class="modal " id="gallery1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title" id="myModalLabel">Накрутки</h2>
+              </div>
+              <div class="modal-body">
+
+                <div class="fotorama" data-ratio="700/700" data-width="100%" data-nav="thumbs" data-click="true" data-loop="true" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down":true}'>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+              </div>
             </div>
-            <h2 class="gallery__subtitle">Накрутки</h2>
+          </div>
+        </div>
+
+        <div class="modal fade" id="gallery2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title" id="myModalLabel">Букли</h2>
+              </div>
+              <div class="modal-body">
+
+                <div class="fotorama" data-ratio="700/700" data-width="100%" data-nav="thumbs" data-click="true" data-loop="true" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down":true}'>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="gallery3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title" id="myModalLabel">Плетения</h2>
+              </div>
+              <div class="modal-body">
+
+                <div class="fotorama" data-ratio="700/700" data-width="100%" data-nav="thumbs" data-click="true" data-loop="true" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down":true}'>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="gallery4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title" id="myModalLabel">Детские</h2>
+              </div>
+              <div class="modal-body">
+
+                <div class="fotorama" data-ratio="700/700" data-max-width="100%" data-nav="thumbs" data-click="true" data-loop="true" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down":true}'>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                  <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="30" height="30"></a>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
           </div>
         </div>
 
 
-        <div class="gallery__list-item col-sm-3 col-xs-6">
-          <div class="gallery__column">
-            <div class="gallery__image-box">
-              <a class="various" data-fancybox-type="iframe" href="bukli.html">
-                <img class="gallery__image" src="images/gallery/bukli.jpg" alt="Накрутки">
-              </a>
-            </div>
-            <h2 class="gallery__subtitle">Букли</h2>
-          </div>
-        </div>
 
-        <div class="gallery__list-item col-sm-3 col-xs-6">
-          <div class="gallery__column">
-            <div class="gallery__image-box">
-              <a class="various" data-fancybox-type="iframe" href="pletenya.html">
-                <img class="gallery__image" src="images/gallery/pletenya.jpg" alt="Плетения">
-              </a>
-            </div>
-            <h2 class="gallery__subtitle">Плетения</h2>
-          </div>
-        </div>
-
-        <div id="openDialog" class="gallery__list-item col-sm-3 col-xs-6">
-          <div class="gallery__column">
-            <div class="gallery__image-box">
-              <a class="">
-                <img class="gallery__image" src="images/gallery/pletenya.jpg" alt="Плетения">
-              </a>
-            </div>
-            <h2 class="gallery__subtitle">Плетения</h2>
-          </div>
-        </div>
-
-
-
-
-
-
-
-      </div>
-    </div>
-  </section>
 
 <!-- services -->
 
@@ -406,6 +514,23 @@
 </div>
 
 
+<div class="diploms-mobile">
+<div class="fotorama" data-ratio="500/500" data-width="100%" data-nav="thumbs" data-click="true" data-loop="true" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down":true}'>
+
+  <a href="images/diploms/diplom_1.jpg"><img src="images/diploms/diplom_1_small.jpg" width="30" height="40"></a>
+  <a href="images/diploms/diplom_2.jpg"><img src="images/diploms/diplom_2_small.jpg" width="30" height="40"></a>
+  <a href="images/diploms/diplom_3.jpg"><img src="images/diploms/diplom_3_small.jpg" width="30" height="40"></a>
+  <a href="images/diploms/diplom_4.jpg"><img src="images/diploms/diplom_4_small.jpg" width="30" height="40"></a>
+  <a href="images/diploms/diplom_5.jpg"><img src="images/diploms/diplom_5_small.jpg" width="30" height="40"></a>
+  <a href="images/diploms/diplom_6.jpg"><img src="images/diploms/diplom_6_small.jpg" width="30" height="40"></a>
+  </div>
+</div>
+
+
+
+
+
+
 <!-- footer -->
 
 <footer class="footer">
@@ -432,37 +557,9 @@
 
 
 
-  <!-- <button id="openDialog"></button>-->
-
-<dialog>
-  <!-- Fotorama -->
-  <div class="fotorama" data-ratio="700/467"
-    data-max-width="100%"
-    data-nav="thumbs"
-    data-click="true"
-    data-loop="true"
-    data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down":true}'>
-    <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="20" height="20"></a>
-    <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="20" height="20"></a>
-    <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="20" height="20"></a>
-    <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="20" height="20"></a>
-    <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="20" height="20"></a>
-    <a href="images/bukli_big.jpg"><img src="images/bukli_small.jpg" width="20" height="20"></a>
-    </div>
- <p><button id="closeDialog">Закрыть окно</button></p>
-</dialog>
 
 
 
-<script>
-   var dialog = document.querySelector('dialog');
-   document.querySelector('#openDialog').onclick = function() {
-    dialog.show(); // Показываем диалоговое окно
-   }
-   document.querySelector('#closeDialog').onclick = function() {
-    dialog.close(); // Прячем диалоговое окно
-   }
-</script>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -475,5 +572,11 @@
     <!-- fotorama.css & fotorama.js. -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        $('#gallery__image-box').on('click', function () {
+          $('#gallery1').modal('show')
+        })
+    </script>
+
   </body>
 </html>
