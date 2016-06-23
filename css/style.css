@@ -314,7 +314,7 @@ text-align: center;
   text-align: center;
   font-size: 55px;
   line-height:1.3;
-  margin-bottom: 10vw;
+  margin-bottom: 7vw;
 }
 
 .services__title-inner{
@@ -570,29 +570,31 @@ width: 100%;
 }
 .about__text{
   width: 80%; /*Размер текста*/
-
   font-size: 16px;
   line-height: 1.3;
   margin-bottom: 45px;
 }
 .about__contacts{
-  /*margin-left: 350px;*/
   margin-bottom: 30px;
   font-size: 18px;
 }
-
-
 .about__contacts-tel{
-text-decoration:none;
-color: #ee964c;
-font-size: 120%;
+  text-decoration:none;
+  color: #ee964c;
+  font-size: 120%;
+}
+.about__contacts-tel:hover{
+  text-decoration: none;
+  color: #808080;
 }
 .about__contacts-email{
-text-decoration:none;
-color: #808080;
+  text-decoration:none;
+  color: #808080;
 }
-
-
+.about__contacts-email:hover{
+  text-decoration: none;
+  color: #ee964c;
+}
 
 /*advantages*/
 
@@ -663,6 +665,7 @@ color: #808080;
 /*.diploms */
 
 .diploms {
+  width: 940px;
   text-align:center;
   margin: 0 auto;
 }
@@ -787,9 +790,6 @@ color: #808080;
 
 
 
-
-
-
 /*@media*/
 
 @media (max-width: 1366px){
@@ -799,12 +799,12 @@ color: #808080;
 }
 
 
-@media (max-width: 1100px){
-
+@media (max-width: 950px){
+.diploms {
+    width: 600px;
 }
 
 @media (max-width: 850px){
-
   .main-menu__list {
     display:none;
   }
@@ -883,23 +883,27 @@ color: #808080;
     width: 70%;
     }
 
-   .gallery__title{
-    font-size: 11vw;
-    margin-bottom: 5vw;
-   }
+.gallery{
+  padding-top:180px;
+}
 
- .gallery__title::after{
-   width: 46vw;
-    height: 4vw;
-
-   }
-   .gallery__image{
-     width: 100%;
-    border: 1vw solid #F15A24;
-    }
- .gallery__list-item{
-   text-align: center;
+ .gallery__title{
+  font-size: 11vw;
+  margin-bottom: 5vw;
  }
+
+.gallery__title::after{
+ width: 46vw;
+  height: 4vw;
+
+ }
+ .gallery__image{
+   width: 100%;
+  border: 1vw solid #F15A24;
+  }
+.gallery__list-item{
+ text-align: center;
+}
 
  .gallery__subtitle{
    margin: 1vw auto 6vw;
@@ -907,6 +911,9 @@ color: #808080;
  }
 
 /*services*/
+.services{
+  padding-top:250px;
+}
 
 .services__title{
   font-size: 11vw;
@@ -929,6 +936,9 @@ border: 0.5vw solid;
 
 
 /*about*/
+.about{
+  padding-top:250px;
+}
 .about__header{
   font-size:11vw;
   /*line-height:1.3;*/
