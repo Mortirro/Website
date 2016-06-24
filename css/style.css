@@ -871,14 +871,16 @@ width: 100%;
       /*text-decoration: none;*/
 
     }
-
-    .promo__title{
-    top:200px;
-    font-size: 25px;
-    }
-    .promo-logo__image {
-    width: 70%;
-    }
+.promo__logo__image{
+  width: 60%;
+}
+.promo__title{
+  top:200px;
+  font-size: 25px;
+}
+  .promo-logo__image {
+  width: 70%;
+}
 
 .gallery{
   padding-top:180px;
