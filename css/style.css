@@ -195,6 +195,15 @@ text-align: center;
 .main-menu__link:hover{
   color: #ef5829;
 }
+
+/*цвет верхнего меню при навидении и нажатии*/
+.main-menu__link:focus,
+.main-menu__link:link,
+.main-menu__link:active,
+.main-menu__link:hover{
+  color: #F15A24;
+}
+
 .header__feedback{
   position: absolute;
   top:1px;
@@ -286,7 +295,7 @@ text-align: center;
 .gallery__image{
   width: 100%;
   border-radius: 50%;
-  border: 0.4vw solid #F15A24;
+  border: 0.3vw solid #F15A24;
 }
 .gallery__subtitle{
   font-size: 2vw;

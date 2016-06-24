@@ -572,9 +572,12 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/vendor/jquery.arcticmodal-0.3.min.js"></script>
+    <!--Добавил-->
+    <script src="js/vendor/jquery.smooth-scroll.js"></script>
     <script src="fancybox/source/jquery.fancybox.pack.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+
 
     <!-- fotorama.css & fotorama.js. -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
@@ -584,15 +587,12 @@
           $('#gallery1').modal('show')
         })
     </script>
+
+    <!--Скролл-->
     <script>
-    $('button.scrollsomething').on('click', function() {
-      $.smoothScroll({
-        scrollElement: $('div.scrollme'),
-        scrollTarget: '#findme'
-      });
-      return false;
-    });
+      $('a').smoothScroll()
     </script>
+
 
   </body>
 </html>
