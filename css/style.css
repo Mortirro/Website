@@ -192,16 +192,14 @@ text-align: center;
   display: block;
   padding: 10px 10px;
 }
-.main-menu__link:hover{
-  color: #ef5829;
-}
+
 
 /*цвет верхнего меню при навидении и нажатии*/
 .main-menu__link:focus,
 .main-menu__link:link,
-.main-menu__link:active,
+/*.main-menu__link:active,*/
 .main-menu__link:hover{
-  color: #F15A24;
+  color: #ef5829;
 }
 
 .header__feedback{
@@ -211,11 +209,21 @@ text-align: center;
   font-size: 16px;
   font-style: italic;
   color: #fff;
-
 }
+
+
+
+
+
 .header__feedback-tel{
   color: #fff;
 }
+
+.header__feedback-tel:link{
+  color: #fff;
+}
+
+
 .header__feedback-tel:hover{
   color: #F15A24;
   text-decoration: none;
@@ -383,21 +391,21 @@ text-align: center;
   float:left;
   padding-bottom:50%;
   background:#000;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .services__image-shadow__part3{
   width:50%;
   float:left;
   padding-bottom:50%;
   background:#000;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .services__image-shadow__part4{
   width:50%;
   float:left;
   padding-bottom:50%;
   background:#000;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 
@@ -516,7 +524,7 @@ text-align: center;
 
 .about__card-img{
   border-radius: 50%;
-  border:  #ee964c;
+  border: #ee964c;
 }
 .about__card-list{
   text-align: center;
@@ -589,18 +597,32 @@ width: 100%;
   color: #ee964c;
   font-size: 120%;
 }
+
+.about__contacts-tel:link{
+  text-decoration: #808080;
+  color: #ee964c;
+}
+
 .about__contacts-tel:hover{
   text-decoration: none;
   color: #808080;
 }
+
 .about__contacts-email{
   text-decoration:none;
   color: #808080;
 }
+
+.about__contacts-email:link{
+  color: #808080;
+  text-decoration: none;
+}
+
 .about__contacts-email:hover{
   text-decoration: none;
   color: #ee964c;
 }
+
 
 /*advantages*/
 
@@ -743,11 +765,23 @@ width: 100%;
   color: #fff;
 }
 
+/*.footer__feedback-phone:focus,
+.footer__feedback-phone:link,
 .footer__feedback-phone:hover{
-  color: #F15A24;
-  text-shadow: 0 0 20px rgba(0,0,0,0.4);
+color: #F15A24;
+}*/
+
+.footer__feedback-phone:link{
+  color: #fff;
   text-decoration: none;
 }
+
+.footer__feedback-phone:hover{
+  color: #F15A24;
+  text-decoration: none;
+}
+
+
 
 .footer__dev{
   position: absolute;
@@ -783,6 +817,25 @@ width: 100%;
   padding-top: 20px;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -867,7 +920,7 @@ width: 100%;
       display:none;
     }
     .header__feedback::before{
-    background: url("../images/phone_22p.png") no-repeat;
+    background: url("../images/phone_small.png") no-repeat;
     top:6px;
     right: 6px;
     width: 23px;
