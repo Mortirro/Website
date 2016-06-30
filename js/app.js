@@ -27,6 +27,7 @@ $(document).ready(function() {
 class MenuHandler {
     constructor() {
         this.menuTrigger = $('#menu-trigger');
+        this.menuItems = $('.main-menu__link');
         this.menu = $('.main-menu');
 
         this.toggleMenu();
@@ -36,6 +37,10 @@ class MenuHandler {
         this.menuTrigger.on('click', ()=> {
             this.menuTrigger.toggleClass('is-open');
             this.menu.toggleClass('is-open');
+        });
+        this.menuItems.on('click', ()=> {
+            this.menuTrigger.removeClass('is-open');
+            this.menu.removeClass('is-open');
         });
     }
 }

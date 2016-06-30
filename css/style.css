@@ -4,9 +4,11 @@ body {
   font-family: arial, helvetica, sans-serif;
   color: #000;
 }
+
 /** {
   outline: 1px solid blue !important;
 }*/
+
 dialog {
  background: rgba(0, 0, 0, 0.8);
  /*width: 60%;*/
@@ -19,13 +21,9 @@ dialog {
  bottom: 0;
  left: 0;
  }
-
  a:focus{
    outline:none;
  }
-
-
-
 .page{
   max-width: 1400px;
   margin: 0 auto;
@@ -34,9 +32,6 @@ dialog {
   max-width: 840px;
   margin: 0 auto;
 }
-
-
-
 .header{
   text-align: center;
   position: fixed;
@@ -49,14 +44,12 @@ dialog {
   box-shadow: 0px 6px 8px rgba(0,0,0,0.5);
   z-index: 99;
 }
-
 .header__menu{
-text-align: center;
+  text-align: center;
 }
 
 
 /*Бургер меню*/
-
 .menu {
   position: fixed;
   top: 4.1%;
@@ -65,7 +58,6 @@ text-align: center;
           transform: translate(-50%, -50%);
   z-index: 100;
 }
-
 .main-menu__toggle {
   position: absolute;
   top: 5px;
@@ -91,7 +83,6 @@ text-align: center;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-
 .menu__burger,
 .menu__burger:before,
 .menu__burger:after {
@@ -102,7 +93,6 @@ text-align: center;
   background-color: white;
   position: absolute;
 }
-
 .menu__burger {
   left: 8px;
   top: 16px;
@@ -120,7 +110,6 @@ text-align: center;
 .menu__burger:after {
   top: 8px;
 }
-
 .menu__exit:before,
 .menu__exit:after {
   display: block;
@@ -130,7 +119,6 @@ text-align: center;
   background-color: white;
   position: absolute;
 }
-
 .menu__exit {
   position: absolute;
   left: 6px;
@@ -152,20 +140,18 @@ text-align: center;
           transform: rotate(-45deg);
 }
 
-
 /*Горизонтальное меню*/
-
 .main-menu__list{
   margin: 0;
   padding: 0;
 }
+
 .main-menu__list li {
   position: relative;
 }
 
 .main-menu__list li + li{
 /*border-left: 2px solid #fff;*/
-
 }
 
 .main-menu__list li + li::before{
@@ -178,12 +164,10 @@ text-align: center;
   height: 20px;
   background-color: #fff;
 }
-
 .main-menu__list-item{
   display: inline-block;
   padding:0;
 }
-
 .main-menu__link{
   text-decoration: none;
   font-size:20px;
@@ -201,7 +185,6 @@ text-align: center;
 .main-menu__link:hover{
   color: #ef5829;
 }
-
 .header__feedback{
   position: absolute;
   top:1px;
@@ -210,20 +193,12 @@ text-align: center;
   font-style: italic;
   color: #fff;
 }
-
-
-
-
-
 .header__feedback-tel{
   color: #fff;
 }
-
 .header__feedback-tel:link{
   color: #fff;
 }
-
-
 .header__feedback-tel:hover{
   color: #F15A24;
   text-decoration: none;
@@ -827,28 +802,6 @@ color: #F15A24;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*@media*/
 
 @media (max-width: 1366px){
@@ -882,118 +835,112 @@ color: #F15A24;
 }
 
 @media (max-width: 768px){
-    .promo{min-height: 300px;
-    }
-    .main-menu__toggle {
+  .promo{min-height: 300px;
+    background: url("../images/promo_full_small.jpg") center bottom no-repeat;
+    background-size: cover;
+  }
+  .main-menu__toggle {
     display: block;
   }
 
-    .main-menu__list{
+  .main-menu__list{
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     background-color: rgba(0,0,0,.7);
     margin: 0
-    }
-    .main-menu__list-item{
-      display: block;
-    }
+  }
+  .main-menu__list-item{
+    display: block;
+  }
 
-    .main-menu__list li + li::before{
-      content: none;
-      }
-    .main-menu__list li {
+  .main-menu__list li + li::before{
+    content: none;
+    }
+  .main-menu__list li {
     border-bottom: 1px solid rgba(255,255,255,0.2);
-    }
+  }
 
-    .header__feedback{
+  .header__feedback{
     position: relative;
     text-align: center;
     top: auto;
     right: auto;
     display: inline-block;
     margin-top: 14px;
-    }
+  }
 
-    .header__feedback-label{
-      display:none;
-    }
-    .header__feedback::before{
+  .header__feedback-label{
+    display:none;
+  }
+  .header__feedback::before{
     background: url("../images/phone_small.png") no-repeat;
     top:6px;
     right: 6px;
     width: 23px;
     height: 22px;
-    }
-    .header__feedback:hover{
-      /*color: #F15A24;*/
-       text-shadow: 1px 1px 2px black, 0 0 1em red;
-      /*box-shadow: 0 0 20px rgba(0,0,0,0.7);*/
-      /*text-decoration: none;*/
-
-    }
-.promo__logo__image{
-  width: 60%;
-}
-.promo__title{
-  top:200px;
-  font-size: 25px;
-}
-  .promo-logo__image {
-  width: 70%;
-}
+  }
+  .header__feedback:hover{
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+  }
+  .promo__logo__image{
+    width: 60%;
+  }
+  .promo__title{
+    top:200px;
+    font-size: 25px;
+  }
+    .promo-logo__image {
+    width: 70%;
+  }
 
 .gallery{
   padding-top:180px;
 }
 
- .gallery__title{
+.gallery__title{
   font-size: 11vw;
   margin-bottom: 5vw;
- }
-
-.gallery__title::after{
- width: 46vw;
-  height: 4vw;
-
- }
- .gallery__image{
-   width: 100%;
-  border: 1vw solid #F15A24;
-  }
-.gallery__list-item{
- text-align: center;
 }
 
- .gallery__subtitle{
-   margin: 1vw auto 6vw;
-   font-size: 4vw;
- }
+.gallery__title::after{
+  width: 46vw;
+  height: 4vw;
+}
+.gallery__image{
+ width: 100%;
+ border: 1vw solid #F15A24;
+}
+.gallery__list-item{
+  text-align: center;
+}
+.gallery__subtitle{
+ margin: 1vw auto 6vw;
+ font-size: 4vw;
+}
 
 /*services*/
+
 .services{
   padding-top:250px;
 }
-
 .services__title{
   font-size: 11vw;
-
 }
 .services__title-inner{
 border: 0.5vw solid;
 }
 
-
- .services__item-label{
-   font-size: 4vw;
- }
- .services__item-title{
-   font-size: 6vw;
- }
- .services__item-price{
-   font-size: 4vw;
- }
+.services__item-label{
+ font-size: 4vw;
+}
+.services__item-title{
+ font-size: 6vw;
+}
+.services__item-price{
+ font-size: 4vw;
+}
 
 
 /*about*/
@@ -1008,8 +955,6 @@ border: 0.5vw solid;
 .about__card-img{
   width: 80%;
 }
-
-
 
 .about__card-text{
   font-size: 5.5vw;
@@ -1041,10 +986,6 @@ border: 0.5vw solid;
   .diploms-mobile{
     display: block;
   }
-
-
-
-
 }
 
 @media (max-width:760px){
@@ -1060,16 +1001,19 @@ border: 0.5vw solid;
 .footer__dev{
   position: relative;
   right: 0;
-
   }
 }
 
 @media (max-width:500px){
-
   .gallery__subtitle{
     font-size: 6vw;
   }
 
-
-
+@media (min-width:360px){
+.about__text{
+  margin-left: 40px;
+}
+ .about__contacts{
+  margin-left: 40px;
+ }
 }
